@@ -5,13 +5,11 @@ export default function Privacy() {
 	return (
 		<div className="container-responsive py-10">
 			<Helmet>
-				<title>Privacy Policy — Jadhavar College of Law, Pune</title>
-				<link rel="canonical" href="https://www.jadhavar-law.edu.in/privacy" />
+				<title>Privacy Policy - AIM PGDM, Pune</title>
+				<link rel="canonical" href="https://adityainstitutepgdm.com/privacy" />
 			</Helmet>
 			<h1 className="text-3xl font-bold">Privacy Policy</h1>
 			<p className="mt-4 text-sm text-gray-700">This is a placeholder privacy policy. Replace with your institution's policy.</p>
 		</div>
 	)
 }
-
-

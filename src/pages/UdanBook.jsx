@@ -21,10 +21,10 @@ export default function UdanBook() {
     <>
       {/* SEO */}
       <Helmet>
-        <title>{book.title} | Jadhavar College of Law</title>
+        <title>{book.title} | AIM PGDM</title>
         <meta
           name="description"
-          content={`Download ${book.title} book from Udan Program at Jadhavar College of Law.`}
+          content={`Download ${book.title} from the Udan Program at AIM PGDM.`}
         />
       </Helmet>
 
@@ -72,3 +72,4 @@ export default function UdanBook() {
     </>
   );
 }
+

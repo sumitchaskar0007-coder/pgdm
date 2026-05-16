@@ -98,9 +98,7 @@ export default function Header() {
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-600 text-xs sm:text-sm">Admissions Open 2026-27</span>
-                  <span className="bg-green-100 text-green-700 text-xs px-2 py-0.5 rounded-full">
-                    Limited Seats
-                  </span>
+                 
                 </div>
                 <div className="flex items-center gap-1 bg-blue-50 px-2 py-1 rounded-full">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-blue-700" />

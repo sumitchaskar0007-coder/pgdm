@@ -6,18 +6,16 @@ export default function Events() {
 	return (
 		<div className="container-responsive py-10">
 			<Helmet>
-				<title>Events — Jadhavar College of Law, Pune</title>
-				<meta name="description" content="Events, seminars and conferences at Jadhavar College of Law, Pune." />
-				<link rel="canonical" href="https://www.jadhavar-law.edu.in/events" />
+				<title>Events - AIM PGDM, Pune</title>
+				<meta name="description" content="Events, seminars, conclaves, and workshops at AIM PGDM, Pune." />
+				<link rel="canonical" href="https://adityainstitutepgdm.com/events" />
 			</Helmet>
 			<h1 className="text-3xl font-bold">Events</h1>
 			<div className="grid gap-4 md:grid-cols-3 mt-6">
-				<EventCard title="National Moot Court" date="Mar 10, 2026" location="Campus" />
-				<EventCard title="Seminar: Human Rights" date="Feb 28, 2026" location="Auditorium" />
-				<EventCard title="Workshop: Mediation" date="Feb 12, 2026" location="Hall B" />
+				<EventCard title="Management Conclave 2026" date="Mar 10, 2026" location="Campus" />
+				<EventCard title="Seminar: Emerging Business Trends" date="Feb 28, 2026" location="Auditorium" />
+				<EventCard title="Workshop: Leadership & Negotiation" date="Feb 12, 2026" location="Hall B" />
 			</div>
 		</div>
 	)
 }
-
-

@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import GlimpseLawCollege from "../components/GlimpseLawCollege";
+import GlimpseAIM from "../components/GlimpseAIM";
 import second from "../components/second";
 import { ChevronLeft, ChevronRight, TrendingUp, BarChart3, Megaphone, Wallet, Users, Truck } from 'lucide-react';
 
@@ -35,7 +35,7 @@ const specializations = [
     icon: <Users className="h-8 w-8 text-gray-700" />,
     description: "Build people-centric leaders and organizational designers.",
     features: ["Recruitment & Talent Acquisition", "Employee Engagement & Training"],
-    certifications: ["HR Analytics & Dashboards", "SAP HRMS", "Talent Acquisition", "Labour Laws"]
+    certifications: ["HR Analytics & Dashboards", "SAP HRMS", "Talent Acquisition", "Industrial Relations"]
   },
   {
     id: 4,
@@ -564,16 +564,16 @@ export default function HeroSection() {
             <div className="bg-gray-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition">
               <h3 className="text-xl md:text-2xl font-bold mb-3 flex items-center gap-2 text-gray-800">🎯 Vision</h3>
               <p className="text-gray-600 text-sm md:text-base">
-                To emerge as a leading institution in legal education by producing
+                To emerge as a leading institution in management education by producing
                 socially responsible, ethically strong, and professionally competent
-                legal practitioners.
+                business leaders.
               </p>
             </div>
             <div className="bg-gray-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition">
               <h3 className="text-xl md:text-2xl font-bold mb-3 flex items-center gap-2 text-gray-800">🚀 Mission</h3>
               <ul className="text-gray-600 space-y-2 text-sm md:text-base">
-                <li>• Deliver quality legal education aligned with BCI standards</li>
-                <li>• Promote research, advocacy, and courtroom excellence</li>
+                <li>• Deliver quality management education aligned with industry standards</li>
+                <li>• Promote research, innovation, and leadership excellence</li>
                 <li>• Instill ethical values and social responsibility</li>
               </ul>
             </div>
@@ -581,7 +581,7 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <GlimpseLawCollege />
+      <GlimpseAIM />
 
       {/* ================= AWARDS & ACHIEVEMENTS ================= */}
       <section className="w-full bg-white py-12 md:py-16">
@@ -599,8 +599,8 @@ export default function HeroSection() {
               <p className="text-xs md:text-sm text-blue-600 font-semibold mb-2">Jadhavar Group of Institutes</p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4">Awards & Achievements</h2>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                Jadhavar College of Law has been consistently recognized for excellence
-                in legal education. Our commitment to quality teaching, infrastructure,
+                Aditya Institute of Management has been consistently recognized for excellence
+                in management education. Our commitment to quality teaching, infrastructure,
                 and student outcomes has earned us numerous accolades and certifications.
               </p>
             </div>
@@ -648,11 +648,11 @@ export default function HeroSection() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 md:mb-10">Student Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-md">
-              <p className="text-gray-600 text-sm md:text-base italic">“The faculty and moot court training helped me gain confidence for courtroom practice.”</p>
-              <p className="mt-3 md:mt-4 font-semibold text-gray-800">— LL.B Student</p>
+              <p className="text-gray-600 text-sm md:text-base italic">“The faculty guidance and live projects helped me gain confidence for corporate roles.”</p>
+              <p className="mt-3 md:mt-4 font-semibold text-gray-800">— PGDM Student</p>
             </div>
             <div className="bg-white p-6 md:p-8 rounded-xl shadow-md">
-              <p className="text-gray-600 text-sm md:text-base italic">“Internship guidance and legal exposure at Jadhavar College of Law shaped my legal career.”</p>
+              <p className="text-gray-600 text-sm md:text-base italic">“Internship guidance and placement preparation at AIM shaped my management career.”</p>
               <p className="mt-3 md:mt-4 font-semibold text-gray-800">— Alumni</p>
             </div>
           </div>
@@ -663,3 +663,5 @@ export default function HeroSection() {
     </>
   );
 }
+
+

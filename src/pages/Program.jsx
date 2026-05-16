@@ -39,7 +39,7 @@ const Program = () => {
         "Recruitment & Talent Acquisition",
         "Employee Engagement & Training",
       ],
-      cert: "HR Analytics, SAP HRMS, Labour Laws",
+      cert: "HR Analytics, SAP HRMS, Industrial Relations",
     },
     {
       title: "Operations & Supply Chain",

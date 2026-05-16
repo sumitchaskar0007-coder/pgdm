@@ -1,58 +1,58 @@
 export const udanBooks = {
   1: {
-    title: "Udan 1 – Introduction to Law",
+    title: "Udan 1 - Foundations of Management",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 1.pdf",
     description:
-      "This book introduces basic legal concepts, legal systems, and the foundation of law for beginners."
+      "This book introduces core management concepts, business functions, and the foundations of managerial thinking."
   },
   2: {
-    title: "Udan 2 – Constitutional Values",
+    title: "Udan 2 - Business Environment & Ethics",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 2.pdf",
     description:
-      "Focuses on the Indian Constitution, fundamental rights, duties, and democratic principles."
+      "Focuses on business ethics, corporate values, and the economic environment shaping modern enterprises."
   },
   3: {
-    title: "Udan 3 – Legal Awareness & Society",
+    title: "Udan 3 - Society, Markets & Communication",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 3.pdf",
     description:
-      "Promotes legal literacy, social justice, and awareness of laws affecting citizens."
+      "Builds awareness of markets, society, and communication skills needed for effective management practice."
   },
   4: {
-    title: "Udan 4 – Advocacy Skills",
+    title: "Udan 4 - Professional Communication Skills",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 4.pdf",
     description:
-      "Develops advocacy skills, court manners, drafting, and professional ethics."
+      "Develops presentation, business communication, teamwork, and professional conduct."
   },
   5: {
-    title: "Udan 5 – Judicial System",
+    title: "Udan 5 - Organizational Systems",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 5.pdf",
     description:
-      "Explains structure and functioning of courts and judicial institutions in India."
+      "Explains how organizations function through structures, processes, coordination, and decision-making."
   },
   6: {
-    title: "Udan 6 – Legal Drafting",
+    title: "Udan 6 - Business Documentation",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 6.pdf",
     description:
-      "Covers drafting of notices, pleadings, applications, and legal documents."
+      "Covers report writing, business documentation, proposals, and professional correspondence."
   },
   7: {
-    title: "Udan 7 – Moot Court Practice",
+    title: "Udan 7 - Case Study Practice",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 7.pdf",
     description:
-      "Practical training through moot courts, mock trials, and oral arguments."
+      "Practical training through case studies, simulations, presentations, and problem-solving exercises."
   },
   8: {
-    title: "Udan 8 – Professional Ethics",
+    title: "Udan 8 - Leadership & Professional Ethics",
     cover: "/assets/books/udan.png",
     pdf: "/assets/books/udan 8.pdf",
     description:
-      "Focuses on ethics, professionalism, leadership, and career readiness in law."
+      "Focuses on ethics, professionalism, leadership, and career readiness in management."
   }
 };

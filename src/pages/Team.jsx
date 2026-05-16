@@ -3,15 +3,15 @@ import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
 
 const team = [
-	{ name: 'Adv. Rohan Mehta', role: 'Senior Partner', bio: 'Corporate & Commercial Law specialist.', img: '/assets/team1.jpg' },
-	{ name: 'Adv. Neha Kulkarni', role: 'Partner', bio: 'Family and civil litigation expert.', img: '/assets/team2.jpg' },
-	{ name: 'Adv. Arjun S.', role: 'Associate', bio: 'Criminal defense and trial practice.', img: '/assets/team3.jpg' },
+	{ name: 'Prof. Rohan Mehta', role: 'Director - Corporate Relations', bio: 'Specialist in industry partnerships and student career development.', img: '/assets/team1.jpg' },
+	{ name: 'Prof. Neha Kulkarni', role: 'Faculty - Marketing', bio: 'Focuses on brand strategy, consumer insights, and experiential learning.', img: '/assets/team2.jpg' },
+	{ name: 'Prof. Arjun S.', role: 'Faculty - Finance', bio: 'Works on analytics, financial strategy, and business decision-making.', img: '/assets/team3.jpg' },
 ]
 
 export default function Team() {
 	return (
 		<div className="container-responsive py-10">
-			<Helmet><title>Our Team — Law Firm</title></Helmet>
+			<Helmet><title>Our Team - AIM PGDM</title></Helmet>
 			<h1 className="text-3xl font-display font-bold">Our Team</h1>
 			<motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 }}}} className="grid gap-4 md:grid-cols-3 mt-6">
 				{team.map((m, i) => (
@@ -28,5 +28,3 @@ export default function Team() {
 		</div>
 	)
 }
-
-

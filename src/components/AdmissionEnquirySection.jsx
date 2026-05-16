@@ -6,7 +6,7 @@ export default function AdmissionEnquirySection() {
     name: "",
     email: "",
     phone: "",
-    program: "3 Years LL.B",
+    program: "PGDM",
     state: "",
     city: "",
     message: "",
@@ -29,7 +29,7 @@ export default function AdmissionEnquirySection() {
         name: "",
         email: "",
         phone: "",
-        program: "3 Years LL.B",
+        program: "PGDM",
         state: "",
         city: "",
         message: "",
@@ -43,23 +43,20 @@ export default function AdmissionEnquirySection() {
   return (
     <section className="w-full bg-gray-50 py-14">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-        {/* ================= LEFT CONTENT ================= */}
         <div className="space-y-8 lg:ml-10 xl:ml-16">
-
           <div>
             <p className="text-sm font-semibold text-blue-700 mb-1">
-              LL.B Admissions 2025–28
+              PGDM Admissions 2026-28
             </p>
 
             <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-              Admissions Open <br /> 3 Years LL.B Program
+              Admissions Open <br /> PGDM Program
             </h2>
 
             <p className="text-gray-600 max-w-xl leading-relaxed">
-              Jadhavar College of Law, Pune offers a Bar Council of India (BCI)
-              approved 3 Years LL.B program with strong focus on advocacy,
-              judiciary preparation, internships, and ethical legal education.
+              Aditya Institute of Management, Pune offers an AICTE-approved PGDM
+              program with a strong focus on industry readiness, internships,
+              leadership development, and career growth.
             </p>
 
             <a
@@ -68,18 +65,15 @@ export default function AdmissionEnquirySection() {
               rel="noopener noreferrer"
               className="inline-block mt-5 border border-gray-300 px-6 py-2.5 rounded-md font-medium hover:bg-gray-100 transition"
             >
-              ⬇ Download Prospectus
+              Download Prospectus
             </a>
           </div>
 
-          {/* ================= FORM ================= */}
           <form
             onSubmit={handleSubmit}
             className="bg-white border rounded-xl p-6 shadow-sm max-w-md"
           >
-            <h4 className="font-semibold text-lg mb-4">
-              Get in Touch with Us
-            </h4>
+            <h4 className="font-semibold text-lg mb-4">Get in Touch with Us</h4>
 
             <div className="space-y-3">
               <input
@@ -116,7 +110,9 @@ export default function AdmissionEnquirySection() {
                 onChange={handleChange}
                 className="w-full border rounded-md px-4 py-2.5"
               >
-                <option>3 Years LL.B</option>
+                <option>PGDM</option>
+                <option>MBA</option>
+                <option>Executive PGDM</option>
               </select>
 
               <input
@@ -145,14 +141,10 @@ export default function AdmissionEnquirySection() {
               />
 
               {status === "success" && (
-                <p className="text-green-600 text-sm">
-                  ✔ Enquiry submitted successfully
-                </p>
+                <p className="text-green-600 text-sm">Enquiry submitted successfully</p>
               )}
               {status === "error" && (
-                <p className="text-red-600 text-sm">
-                  ❌ Failed to submit enquiry
-                </p>
+                <p className="text-red-600 text-sm">Failed to submit enquiry</p>
               )}
 
               <button
@@ -165,56 +157,43 @@ export default function AdmissionEnquirySection() {
           </form>
         </div>
 
-        {/* ================= RIGHT CONTENT ================= */}
         <div className="space-y-8">
-
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white border rounded-lg p-5">
               <h5 className="font-semibold mb-1">Program</h5>
-              <p className="text-sm text-gray-600">
-                LL.B – 3 Years (Graduate Entry)
-              </p>
+              <p className="text-sm text-gray-600">PGDM - 2 Years (Full-Time)</p>
             </div>
 
             <div className="bg-white border rounded-lg p-5">
               <h5 className="font-semibold mb-1">Eligibility</h5>
-              <p className="text-sm text-gray-600">
-                Any Graduate (Min. 45%)
-              </p>
+              <p className="text-sm text-gray-600">Any Graduate (Min. 50%)</p>
             </div>
 
             <div className="bg-white border rounded-lg p-5 sm:col-span-2">
               <h5 className="font-semibold mb-1">Approval</h5>
-              <p className="text-sm text-gray-600">
-                Bar Council of India (BCI)
-              </p>
+              <p className="text-sm text-gray-600">AICTE Approved</p>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-2">
-              Important Dates
-            </h4>
+            <h4 className="font-semibold text-lg mb-2">Important Dates</h4>
             <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Admissions Open: Ongoing</li>
-              <li>• Last Date to Apply: As per seat availability</li>
-              <li>• Academic Session Begins: July 2025</li>
+              <li>Admissions Open: Ongoing</li>
+              <li>Last Date to Apply: As per seat availability</li>
+              <li>Academic Session Begins: July 2026</li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-2">
-              Why Jadhavar College of Law?
-            </h4>
+            <h4 className="font-semibold text-lg mb-2">Why AIM PGDM?</h4>
             <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Experienced faculty & practicing advocates</li>
-              <li>• Moot court, legal aid clinic & court visits</li>
-              <li>• Internship & placement assistance</li>
-              <li>• Judiciary & litigation focused training</li>
+              <li>Experienced faculty and corporate mentors</li>
+              <li>Live projects, internships, and industry visits</li>
+              <li>Placement assistance and career support</li>
+              <li>Leadership-focused and industry-aligned curriculum</li>
             </ul>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -30,7 +30,6 @@ import EnquiryModal from './components/EnquiryModal.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Admission from './pages/Admission.jsx';
-import Academics from './pages/Academics.jsx';
 import Campus from './pages/Campus.jsx';
 import Contact from './pages/Contact.jsx';
 import NotFound from './pages/NotFound.jsx';

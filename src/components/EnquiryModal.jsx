@@ -67,9 +67,9 @@ export default function EnquiryModal({ open, onClose }) {
 					</div>
 					<select {...register('program')} className="w-full p-3 border rounded-lg border-gray-300 focus:border-primary focus:ring-primary">
 						<option value="">Program of interest</option>
-						<option value="ba-llb">B.A. LL.B (5 yrs)</option>
-						<option value="llb-3">LL.B (3 yrs)</option>
-						<option value="llm">LL.M</option>
+						<option value="pgdm">PGDM</option>
+						<option value="mba">MBA</option>
+						<option value="executive-pgdm">Executive PGDM</option>
 						<option value="certificate">Certificate Courses</option>
 					</select>
 					<textarea {...register('message')} placeholder="Message (optional)" className="w-full p-3 border rounded-lg border-gray-300 focus:border-primary focus:ring-primary min-h-[100px]" />
@@ -86,5 +86,6 @@ export default function EnquiryModal({ open, onClose }) {
 		</div>
 	)
 }
+
 
 

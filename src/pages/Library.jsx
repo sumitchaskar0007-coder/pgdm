@@ -88,7 +88,7 @@ const libraryContent = {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="p-3 text-gray-600">LL.B.</td>
+                  <td className="p-3 text-gray-600">Management & Business</td>
                   <td className="p-3">
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm font-medium">349</span>
                   </td>
@@ -267,7 +267,7 @@ export default function Library() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-8 px-4 sm:px-6 lg:px-8">
       <Helmet>
-        <title>Library | Jadhavar College of Law</title>
+        <title>Library | AIM PGDM</title>
       </Helmet>
 
       {/* Header */}
@@ -342,3 +342,4 @@ export default function Library() {
     </div>
   );
 }
+
