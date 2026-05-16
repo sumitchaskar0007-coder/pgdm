@@ -1,0 +1,71 @@
+/* Contact.css - Add these styles for the map section */
+
+/* Map Container Styles */
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Address Container */
+.address-container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.address-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.address-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.address-text {
+  font-size: 16px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.address-text strong {
+  color: #1a1a2e;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Responsive Map */
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;
+  }
+  
+  .address-text {
+    font-size: 14px;
+  }
+  
+  .address-text strong {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container {
+    height: 250px;
+  }
+}

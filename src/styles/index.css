@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App global tweaks */
+:root {
+	--brand: #410445;
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+body {
+	@apply text-gray-800;
+}
+
+.container-responsive {
+	@apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+
+/* Custom breakpoint for extra small devices */
+@media (min-width: 480px) {
+  .xs\:block {
+    display: block;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  button, 
+  .nav-link,
+  [role="button"] {
+    min-height: 44px;
+  }
+}
+
+/* Smooth scrolling for mobile menu */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
