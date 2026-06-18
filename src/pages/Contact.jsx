@@ -149,14 +149,14 @@ const ContactPage = () => {
             <h2 style={styles.sectionTitle}>Get in Touch</h2>
 
             {/* Call */}
-            <a href="tel:+919356393629" style={styles.contactCard}>
+            <a href="tel:+919356399629" style={styles.contactCard}>
               <div style={styles.contactIcon}>
                 <Phone size={22} />
               </div>
               <div>
                 <div style={styles.contactTitle}>Call Us</div>
                 <div style={styles.contactDescription}>
-                  +91 9356393629
+                  +91 9356399629
                 </div>
               </div>
             </a>

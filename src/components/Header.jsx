@@ -103,7 +103,7 @@ export default function Header() {
                 <div className="flex items-center gap-1 bg-blue-50 px-2 py-1 rounded-full">
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4 text-blue-700" />
                   <span className="text-blue-900 font-semibold text-xs sm:text-sm">
-                    +91 9356393629
+                    +91 9356399629
                   </span>
                 </div>
               </div>
