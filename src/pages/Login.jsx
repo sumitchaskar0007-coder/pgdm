@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Auth.css';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'http://localhost:5004/api';
 
 const Login = () => {
   const [formData, setFormData] = useState({

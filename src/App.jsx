@@ -16,6 +16,7 @@ import Career from './pages/Career';
 import AdminLogin from './pages/admin/AdminLogin';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import GalleryAdmin from './pages/admin/GalleryAdmin';
+import VideoAdmin from './pages/admin/VideoAdmin';
 import NoticeAdmin from './pages/admin/NoticeAdmin';
 import CareerAdmin from './pages/admin/CareerAdmin';
 // import BlogAdmin from './pages/admin/BlogAdmin'; // Add this
@@ -39,6 +40,7 @@ import Founder from './pages/Founder.jsx';
 import Program from './pages/Program.jsx';
 import PuneSection from './pages/PuneSection.jsx';
 import Placements from './pages/Placements.jsx';
+import Videos from './pages/Videos.jsx';
 
 // Scroll to Top Component
 function ScrollToTop() {
@@ -136,6 +138,7 @@ export default function App() {
 
             {/* Extra Public Pages */}
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/videos" element={<Videos />} />
             <Route path="/notice" element={<Notice />} />
             <Route path="/career" element={<Career />} />
             {/* <Route path="/blog/:slug" element={<Blog />} /> */}
@@ -159,6 +162,15 @@ export default function App() {
               element={
                 <ProtectedRoute>
                   <GalleryAdmin />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/admin/videos"
+              element={
+                <ProtectedRoute>
+                  <VideoAdmin />
                 </ProtectedRoute>
               }
             />

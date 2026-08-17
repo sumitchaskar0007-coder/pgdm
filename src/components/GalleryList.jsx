@@ -5,7 +5,7 @@ const GalleryList = () => {
   const [gallery, setGallery] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/gallery")
+    axios.get("http://localhost:5004/api/gallery")
       .then(res => setGallery(res.data));
   }, []);
 
@@ -14,7 +14,7 @@ const GalleryList = () => {
       {gallery.map((g) => (
         <img
           key={g._id}
-          src={`http://localhost:5000/uploads/${g.image}`}
+          src={`http://localhost:5004/uploads/${g.image}`}
           alt=""
           width="150"
         />

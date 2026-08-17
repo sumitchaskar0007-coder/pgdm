@@ -18,7 +18,7 @@ const AdminLogin = () => {
       const response = await authAPI.login({ email, password });
       localStorage.setItem('token', response.data.token);
       toast.success('Login successful!');
-      navigate('/admin/dashboard');
+      navigate('/admin');
     } catch (error) {
       toast.error(error.response?.data?.message || 'Login failed');
     } finally {

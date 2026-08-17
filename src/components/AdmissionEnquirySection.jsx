@@ -23,7 +23,7 @@ export default function AdmissionEnquirySection() {
     setStatus("loading");
 
     try {
-      await axios.post("http://localhost:5000/api/enquiry", formData);
+      await axios.post("http://localhost:5004/api/enquiry", formData);
       setStatus("success");
       setFormData({
         name: "",

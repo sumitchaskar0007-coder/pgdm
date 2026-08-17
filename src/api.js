@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://api.adityainstitutepgdm.com/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://api.adityainstitutepgdm.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
@@ -61,6 +61,14 @@ export const galleryAPI = {
   create: (formData) => api.post('/gallery', formData),
   update: (id, formData) => api.put(`/gallery/${id}`, formData),
   delete: (id) => api.delete(`/gallery/${id}`),
+};
+
+export const videoAPI = {
+  getAll: () => api.get('/videos'),
+  getById: (id) => api.get(`/videos/${id}`),
+  create: (formData) => api.post('/videos', formData),
+  update: (id, formData) => api.put(`/videos/${id}`, formData),
+  delete: (id) => api.delete(`/videos/${id}`),
 };
 
 // Notice API

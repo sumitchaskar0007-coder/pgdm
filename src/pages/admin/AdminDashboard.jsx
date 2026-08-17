@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { FiImage, FiBell, FiBriefcase, FiBookOpen, FiLogOut } from 'react-icons/fi';
+import { FiImage, FiVideo, FiBell, FiBriefcase, FiBookOpen, FiLogOut } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 
 const AdminDashboard = () => {
@@ -19,6 +19,12 @@ const AdminDashboard = () => {
       icon: FiImage, 
       title: 'Gallery Management', 
       description: 'Add, edit, or remove gallery images' 
+    },
+    {
+      path: '/admin/videos',
+      icon: FiVideo,
+      title: 'Video Management',
+      description: 'Add, edit, or remove uploaded and linked videos'
     },
     { 
       path: '/admin/notices', 
