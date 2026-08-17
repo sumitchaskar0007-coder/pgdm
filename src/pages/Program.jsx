@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { BriefcaseBusiness, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 
 const Program = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -135,8 +136,8 @@ const Program = () => {
               <span className="px-3 py-1 text-xs md:text-sm bg-gray-200 rounded-full">
                 AICTE & DTE Approved
               </span>
-              <span className="px-3 py-1 text-xs md:text-sm bg-gray-200 rounded-full">
-                ✱ Industry Aligned
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs md:text-sm bg-gray-200 rounded-full">
+                <BriefcaseBusiness className="h-3.5 w-3.5" /> Industry Aligned
               </span>
             </div>
 
@@ -399,15 +400,17 @@ const Program = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
+            aria-label="Previous program"
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 bg-white rounded-full p-2 md:p-3 shadow-lg hover:bg-gray-100 transition z-10"
           >
-            ◀
+            <ChevronLeft className="h-5 w-5" aria-hidden="true" />
           </button>
           <button
             onClick={nextSlide}
+            aria-label="Next program"
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-4 bg-white rounded-full p-2 md:p-3 shadow-lg hover:bg-gray-100 transition z-10"
           >
-            ▶
+            <ChevronRight className="h-5 w-5" aria-hidden="true" />
           </button>
 
           {/* Dots Indicator */}
@@ -660,7 +663,7 @@ const Program = () => {
               </div>
 
               <div className="mt-6 md:mt-8 pt-4 md:pt-6 border-t border-gray-200">
-                <div className="text-green-600 font-semibold mb-2 text-sm md:text-base">✓ Success!</div>
+                <div className="text-green-600 font-semibold mb-2 text-sm md:text-base flex items-center gap-2"><CheckCircle2 className="h-4 w-4" /> Success!</div>
                 <div className="text-xs text-gray-500">CLOUDFLARE Privacy • Help</div>
               </div>
             </div>

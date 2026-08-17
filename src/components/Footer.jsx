@@ -20,6 +20,7 @@ import {
   FaBriefcase,
   FaUserGraduate
 } from 'react-icons/fa';
+import { ArrowUp } from 'lucide-react';
 import { toast } from 'react-hot-toast';
 
 export default function Footer() {
@@ -282,7 +283,7 @@ export default function Footer() {
         className="fixed bottom-6 right-6 bg-white text-gray-900 w-10 h-10 rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-all duration-300 transform hover:scale-110 z-50"
         aria-label="Back to top"
       >
-        ↑
+        <ArrowUp className="h-5 w-5" />
       </button>
     </footer>
   );

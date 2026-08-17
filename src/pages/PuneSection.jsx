@@ -1,5 +1,6 @@
 import React from "react";
 import FrequentlyAskedQuestions from '../components/FrequentlyAskedQuestions';
+import { Mail, MessageCircle, Phone } from 'lucide-react';
 
 const PuneSection = () => {
   return (
@@ -31,15 +32,15 @@ const PuneSection = () => {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4">
               <button className="bg-black text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-800 transition">
-                Call us 📞
+                <Phone className="h-4 w-4" /> Call us
               </button>
 
               <button className="border px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition">
-                Whats App 💬
+                <MessageCircle className="h-4 w-4" /> WhatsApp
               </button>
 
               <button className="border px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-gray-100 transition">
-                Email us ✉️
+                <Mail className="h-4 w-4" /> Email us
               </button>
             </div>
           </div>

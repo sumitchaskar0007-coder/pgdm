@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
+import { BookOpen, Clock3, ClipboardList, Disc3, Droplets, Landmark, LibraryBig, Link as LinkIcon, Mail, MapPin, Monitor, Newspaper, Phone, Printer, Settings, Smartphone, Target, Users } from 'lucide-react';
 
 const menuItems = [
-  { id: 'About', icon: '📚' },
-  { id: 'Rules', icon: '📋' },
-  { id: 'Services and Facilities', icon: '⚙️' },
-  { id: 'Resources', icon: '📰' },
-  { id: 'Links and Contact', icon: '🔗' }
+  { id: 'About', icon: BookOpen },
+  { id: 'Rules', icon: ClipboardList },
+  { id: 'Services and Facilities', icon: Settings },
+  { id: 'Resources', icon: Newspaper },
+  { id: 'Links and Contact', icon: LinkIcon }
 ];
 
 const libraryContent = {
@@ -21,7 +22,7 @@ const libraryContent = {
       <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
           <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
-            <span className="text-blue-500">🕒</span> Working Hours
+            <Clock3 className="h-5 w-5 text-blue-500" /> Working Hours
           </h3>
           <div className="space-y-2 text-gray-600">
             <p className="flex justify-between">
@@ -37,7 +38,7 @@ const libraryContent = {
 
         <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
           <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-center gap-2">
-            <span className="text-green-500">👥</span> Library Committee
+            <Users className="h-5 w-5 text-green-500" /> Library Committee
           </h3>
           <p className="text-gray-600">Our Library Advisory Committee oversees library affairs and addresses day-to-day operational matters.</p>
         </div>
@@ -151,13 +152,13 @@ const libraryContent = {
 
       <div className="grid md:grid-cols-2 gap-6">
         {[
-          { icon: "💻", title: "Computer & Internet", desc: "Available for staff and students" },
-          { icon: "📱", title: "Digital Library", desc: "Access to digital resources and e-books" },
-          { icon: "📖", title: "Open Shelf System", desc: "Free access to books and resources" },
-          { icon: "💿", title: "Educational CDs", desc: "Curricular and extracurricular content" },
-          { icon: "🎯", title: "Competitive Exam Books", desc: "Latest editions for various exams" },
-          { icon: "🖨️", title: "Photocopy & Print", desc: "Available on payment basis" },
-          { icon: "💧", title: "Drinking Water", desc: "Clean drinking water facility" }
+          { icon: Monitor, title: "Computer & Internet", desc: "Available for staff and students" },
+          { icon: Smartphone, title: "Digital Library", desc: "Access to digital resources and e-books" },
+          { icon: LibraryBig, title: "Open Shelf System", desc: "Free access to books and resources" },
+          { icon: Disc3, title: "Educational CDs", desc: "Curricular and extracurricular content" },
+          { icon: Target, title: "Competitive Exam Books", desc: "Latest editions for various exams" },
+          { icon: Printer, title: "Photocopy & Print", desc: "Available on payment basis" },
+          { icon: Droplets, title: "Drinking Water", desc: "Clean drinking water facility" }
         ].map((service, index) => (
           <motion.div
             key={index}
@@ -168,7 +169,7 @@ const libraryContent = {
           >
             <div className="flex items-center gap-4">
               <div className="text-2xl group-hover:scale-110 transition-transform duration-300">
-                {service.icon}
+                <service.icon className="h-6 w-6 text-purple-600" />
               </div>
               <div>
                 <h3 className="font-semibold text-gray-800 mb-1">{service.title}</h3>
@@ -201,7 +202,7 @@ const libraryContent = {
           >
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center group-hover:bg-amber-200 transition-colors">
-                <span className="text-amber-600">📰</span>
+                <Newspaper className="h-5 w-5 text-amber-600" />
               </div>
               <span className="font-medium text-gray-700">{paper}</span>
             </div>
@@ -230,7 +231,7 @@ const libraryContent = {
               className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md hover:border-emerald-200 transition-all group"
             >
               <div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
-                <span className="text-emerald-600">🏛️</span>
+                <Landmark className="h-5 w-5 text-emerald-600" />
               </div>
               <span className="font-medium text-gray-700 group-hover:text-emerald-600 transition-colors">
                 {lib}
@@ -243,15 +244,15 @@ const libraryContent = {
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Contact Information</h3>
           <div className="space-y-3">
             <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-              <span className="text-blue-500">📞</span>
+              <Phone className="h-5 w-5 text-blue-500" />
               <span className="text-gray-600">Phone: [Library Phone]</span>
             </div>
             <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-              <span className="text-green-500">✉️</span>
+              <Mail className="h-5 w-5 text-green-500" />
               <span className="text-gray-600">Email: [Library Email]</span>
             </div>
             <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-              <span className="text-purple-500">📍</span>
+              <MapPin className="h-5 w-5 text-purple-500" />
               <span className="text-gray-600">Location: [Library Location]</span>
             </div>
           </div>
@@ -291,7 +292,7 @@ export default function Library() {
           <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6">
               <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                <span className="text-2xl">📚</span> Library Menu
+                <BookOpen className="h-6 w-6" /> Library Menu
               </h2>
             </div>
             <div className="p-4">
@@ -311,7 +312,7 @@ export default function Library() {
                           : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800 hover:shadow-sm'
                       }`}
                     >
-                      <span className="text-xl">{item.icon}</span>
+                      <item.icon className="h-5 w-5" />
                       <span className="font-medium">{item.id}</span>
                     </button>
                   </motion.li>

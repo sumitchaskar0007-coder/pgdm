@@ -1,15 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import FAQSection from "../components/FAQSection";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import GlimpseAIM from "../components/GlimpseAIM";
 import second from "../components/second";
-import { ChevronLeft, ChevronRight, TrendingUp, BarChart3, Megaphone, Wallet, Users, Truck } from 'lucide-react';
+import { ArrowRight, BadgeCheck, BarChart3, BookOpenCheck, ChevronLeft, ChevronRight, Compass, FileText, Globe2, Megaphone, Menu, Pause, Play, Rocket, Target, Truck, Users, Wallet } from 'lucide-react';
 
 // Specializations Data
 const specializations = [
@@ -162,7 +161,7 @@ function SpecializationsSlider() {
             }`}
             aria-label={isAutoPlaying ? "Pause autoplay" : "Start autoplay"}
           >
-            {isAutoPlaying ? "⏸" : "▶"}
+            {isAutoPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
           </button>
           <button
             onClick={nextSlide}
@@ -338,10 +337,10 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4 pt-2">
               <button className="bg-yellow-400 text-black px-5 md:px-6 py-2.5 md:py-3 rounded-md font-semibold hover:bg-yellow-300 transition shadow-md flex items-center gap-2 text-sm md:text-base">
-                Apply Now →
+                Apply Now <ArrowRight className="h-4 w-4" />
               </button>
               <button className="bg-white text-black px-5 md:px-6 py-2.5 md:py-3 rounded-md font-semibold hover:bg-gray-100 transition shadow-md flex items-center gap-2 text-sm md:text-base">
-                ⬛ Explore Programs
+                <Compass className="h-4 w-4" /> Explore Programs
               </button>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 pt-4 md:pt-6">
@@ -424,10 +423,10 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
               <button className="bg-yellow-400 hover:bg-yellow-500 text-black px-5 md:px-6 py-2.5 md:py-3 rounded-lg font-semibold flex items-center gap-2 transition text-sm md:text-base">
-                ☰ Admissions 2025–27
+                <Menu className="h-4 w-4" /> Admissions 2025–27
               </button>
               <button className="bg-gray-800 hover:bg-gray-900 text-white px-5 md:px-6 py-2.5 md:py-3 rounded-lg font-semibold flex items-center gap-2 transition text-sm md:text-base">
-                Explore Program →
+                Explore Program <ArrowRight className="h-4 w-4" />
               </button>
             </div>
           </div>
@@ -450,7 +449,7 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <div className="group bg-gray-50 rounded-xl p-5 md:p-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-xl bg-gray-800 text-white mb-4 text-xl md:text-2xl shadow-md group-hover:scale-105 transition-transform">
-                📄
+                <FileText className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-base md:text-lg text-gray-800">5 Specializations</h3>
               <p className="text-gray-500 text-xs md:text-sm mt-1 md:mt-2">Major + Minor Options</p>
@@ -458,7 +457,7 @@ export default function HeroSection() {
 
             <div className="group bg-gray-50 rounded-xl p-5 md:p-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-xl bg-gray-800 text-white mb-4 text-xl md:text-2xl shadow-md group-hover:scale-105 transition-transform">
-                🌐
+                <Globe2 className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-base md:text-lg text-gray-800">Global Exposure</h3>
               <p className="text-gray-500 text-xs md:text-sm mt-1 md:mt-2">Dubai Immersion Program</p>
@@ -466,7 +465,7 @@ export default function HeroSection() {
 
             <div className="group bg-gray-50 rounded-xl p-5 md:p-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-xl bg-gray-800 text-white mb-4 text-xl md:text-2xl shadow-md group-hover:scale-105 transition-transform">
-                ✔️
+                <BadgeCheck className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-base md:text-lg text-gray-800">12+ Certifications</h3>
               <p className="text-gray-500 text-xs md:text-sm mt-1 md:mt-2">Industry-recognized add-ons</p>
@@ -474,7 +473,7 @@ export default function HeroSection() {
 
             <div className="group bg-gray-50 rounded-xl p-5 md:p-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-xl bg-gray-800 text-white mb-4 text-xl md:text-2xl shadow-md group-hover:scale-105 transition-transform">
-                📘
+                <BookOpenCheck className="h-6 w-6" />
               </div>
               <h3 className="font-bold text-base md:text-lg text-gray-800">Placement Support</h3>
               <p className="text-gray-500 text-xs md:text-sm mt-1 md:mt-2">End-to-end career guidance</p>
@@ -562,7 +561,7 @@ export default function HeroSection() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 md:mb-12 text-center">Vision & Mission</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div className="bg-gray-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition">
-              <h3 className="text-xl md:text-2xl font-bold mb-3 flex items-center gap-2 text-gray-800">🎯 Vision</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-3 flex items-center gap-2 text-gray-800"><Target className="h-6 w-6 text-blue-700" /> Vision</h3>
               <p className="text-gray-600 text-sm md:text-base">
                 To emerge as a leading institution in management education by producing
                 socially responsible, ethically strong, and professionally competent
@@ -570,7 +569,7 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="bg-gray-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition">
-              <h3 className="text-xl md:text-2xl font-bold mb-3 flex items-center gap-2 text-gray-800">🚀 Mission</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-3 flex items-center gap-2 text-gray-800"><Rocket className="h-6 w-6 text-blue-700" /> Mission</h3>
               <ul className="text-gray-600 space-y-2 text-sm md:text-base">
                 <li>• Deliver quality management education aligned with industry standards</li>
                 <li>• Promote research, innovation, and leadership excellence</li>
@@ -606,39 +605,6 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <Swiper
-            modules={[Autoplay, Navigation]}
-            spaceBetween={20}
-            slidesPerView={1}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            navigation
-            loop
-            breakpoints={{
-              640: { slidesPerView: 2 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-              1280: { slidesPerView: 4 },
-            }}
-            className="pb-10"
-          >
-            {[
-              "/assets/images/certificate1.png",
-              "/assets/images/certificate2.png",
-              "/assets/images/certificate3.png",
-              "/assets/images/certificate4.png",
-            ].map((cert, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex justify-center">
-                  <img
-                    src={cert}
-                    alt={`Certificate ${index + 1}`}
-                    className="w-full max-w-[200px] md:max-w-xs h-40 md:h-56 object-contain border border-gray-200 rounded-lg"
-                    loading="lazy"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
       </section>
 

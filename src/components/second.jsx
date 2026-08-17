@@ -1,4 +1,5 @@
 import React from 'react';
+import { BriefcaseBusiness, Globe2 } from 'lucide-react';
 
 const AIMSPGDMComponent = () => {
   return (
@@ -59,7 +60,7 @@ const AIMSPGDMComponent = () => {
 
             {/* Feature 2 */}
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-100 hover:shadow-md transition">
-              <div className="text-3xl font-bold text-red-600 mb-2">🌍</div>
+              <Globe2 className="h-9 w-9 text-blue-700 mb-3" />
               <h3 className="text-xl font-semibold text-gray-800">Global Exposure</h3>
               <p className="text-gray-500 text-sm mt-1">Dubai Immersion Program</p>
             </div>
@@ -73,7 +74,7 @@ const AIMSPGDMComponent = () => {
 
             {/* Feature 4 */}
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-100 hover:shadow-md transition">
-              <div className="text-3xl font-bold text-red-600 mb-2">💼</div>
+              <BriefcaseBusiness className="h-9 w-9 text-blue-700 mb-3" />
               <h3 className="text-xl font-semibold text-gray-800">Placement Support</h3>
               <p className="text-gray-500 text-sm mt-1">Campus → Corporate</p>
             </div>
